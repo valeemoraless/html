@@ -1,45 +1,97 @@
 document.querySelector('#header').innerHTML = "Estoy leyendo el documento switch"
-var fruta 
+var numero 
 var mensaje
-var userInput = prompt("ingrese el sabor de su fruta")
+var userInput = prompt("ingrese el numero del dia de la semana")
 
-function jugo_de_fresas() {
+function hoy_es_lunes() {
     
     document.querySelector('#header').innerHTML = mensaje
     document.querySelector('#header').style.color = "pink";
 }
 
 
-function jugo_de_naranja() {
-    mensaje = "batir naranjas y mandarinas"
+function hoy_es_martes() {
+    mensaje = "Hoy es martes"
     document.querySelector('#header').innerHTML = mensaje
     document.querySelector('#header').style.color = "orange";
 }
 
 
 
-function servir_vaso_de_agua() {
+function hoy_es_miercoles() {
 
-   mensaje = "servir vaso con agua"
+   mensaje = "Hoy es miercoles"
     document.querySelector('#header').innerHTML = mensaje
     document.querySelector('#header').style.color = "blue";
 }
 
+function hoy_es_jueves() {
+
+    mensaje = "Hoy es jueves"
+     document.querySelector('#header').innerHTML = mensaje
+     document.querySelector('#header').style.color = "green";
+ }
+
+ function hoy_es_viernes() {
+
+    mensaje = "Hoy es viernes"
+     document.querySelector('#header').innerHTML = mensaje
+     document.querySelector('#header').style.color = "purple";
+ }
+
+
+ function hoy_es_sabado() {
+
+    mensaje = "Hoy es sabado"
+     document.querySelector('#header').innerHTML = mensaje
+     document.querySelector('#header').style.color = "yellow";
+ }
+
+ function hoy_es_domingo() {
+
+    mensaje = "Hoy es domingo"
+     document.querySelector('#header').innerHTML = mensaje
+     document.querySelector('#header').style.color = "brown";
+ }
+
+ 
+ function dia_invalido() {
+
+    mensaje = "este numero es invalido"
+     document.querySelector('#header').innerHTML = mensaje
+     document.querySelector('#header').style.color = "red";
+ }
 
 
 
-fruta = userInput.toLowerCase()
-switch(fruta){
-    case "fresa":
-        mensaje = "batir fresas"
-        jugo_de_fresas()
+
+
+numero = parseInt(userInput)// con parseInt se convierte a entero
+switch(numero){
+    case 1:
+        mensaje = "es lunes"
+        hoy_es_lunes()
     break
-    case "naranja":
-    case "nsandarina":
-        jugo_de_naranja()
+    case 2:
+        hoy_es_martes()
+    break
+    case 3:
+        hoy_es_miercoles()
+    break
+    case 4:
+        hoy_es_jueves()
+    break
+    case 5:
+        hoy_es_viernes()
+    break
+    case 6:
+        hoy_es_sabado()
+    break
+    case 7:
+        hoy_es_domingo()
     break
     default:
-        servir_vaso_de_agua()
+        dia_invalido()
     break
 
 }
