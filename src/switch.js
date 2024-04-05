@@ -21,8 +21,7 @@ function hoy_es_martes() {
 function hoy_es_miercoles() {
 
    mensaje = "Hoy es miercoles"
-    document.querySelector('#header').innerHTML = mensaje
-    document.querySelector('#header').style.color = "blue";
+       document.querySelector('#header').style.color = "blue";
 }
 
 function hoy_es_jueves() {
