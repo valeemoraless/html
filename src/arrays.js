@@ -2,7 +2,7 @@ document.querySelector('#header').innerHTML = "Estoy leyendo el documento arrays
 
 var cesta = []
 
-var opcion = promp("1. ver contenido de la cesta\n2. agreagr una fruta a la cesta\n3. quitar la ultima fruta de la cesta\n4. salir del programa".)
+var opcion = promp("1. ver contenido de la cesta\n2. agreagr una fruta a la cesta\n3. quitar la ultima fruta de la cesta\n4. salir del programa")
 
 console.log(cesta)
 
